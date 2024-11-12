@@ -19,17 +19,19 @@ public class User {
 	private String password;
 	private String role;
 	private String fullname;
+	private boolean status;
 	
 	public User() {
 		super();
 	}
 
-	public User(String email, String password, String role, String fullname) {
-		
+	public User(String email, String password, String role, String fullname, Boolean status) {
+		super();
 		this.email = email;
 		this.password = password;
 		this.role = role;
 		this.fullname = fullname;
+		this.status = (status != null) ? status : false;
 	}
 
 	public Long getId() {
@@ -70,15 +72,13 @@ public class User {
 
 	public void setFullname(String fullname) {
 		this.fullname = fullname;
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 
+	public boolean isStatus() {
+		return status;
+	}
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
 }

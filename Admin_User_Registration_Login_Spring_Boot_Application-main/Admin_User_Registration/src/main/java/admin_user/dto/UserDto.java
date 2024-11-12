@@ -6,13 +6,15 @@ public class UserDto {
 	private String password;
 	private String role;
 	private String fullname;
+	private boolean status;
 	
-	public UserDto(String email, String password, String role, String fullname) {
+	public UserDto(String email, String password, String role, String fullname, Boolean status) {
 		super();
 		this.email = email;
 		this.password = password;
 		this.role = role;
 		this.fullname = fullname;
+		this.status = (status != null) ? status : false;
 	}
 
 	public String getEmail() {
@@ -46,10 +48,12 @@ public class UserDto {
 	public void setFullname(String fullname) {
 		this.fullname = fullname;
 	}
-	
-	
-	
-	
-	
 
+	public boolean isStatus() {
+		return status;
+	}
+
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
 }
