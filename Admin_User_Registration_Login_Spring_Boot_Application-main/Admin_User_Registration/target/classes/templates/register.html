@@ -32,7 +32,10 @@
                 <label for="password">Password:</label>
                 <input th:field="*{password}" type="password" id="password" name="password" placeholder="Enter your password" required>
             </div>
-            <input type="submit" value="Register">
+			<input type="submit" value="Register">
+			<a th:href="@{/login}" class="login-btn">
+						         Login
+		    </a>
         </form>
         
     </div>

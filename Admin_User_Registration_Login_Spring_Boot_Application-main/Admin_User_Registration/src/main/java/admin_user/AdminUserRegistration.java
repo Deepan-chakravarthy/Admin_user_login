@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CodingtechniquesTutorialApplication {
+public class AdminUserRegistration {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CodingtechniquesTutorialApplication.class, args);
+		SpringApplication.run(AdminUserRegistration.class, args);
 	}
 
 }
